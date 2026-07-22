@@ -2,9 +2,10 @@ name: Daily Naver News Briefing Deploy
 
 on:
   push:
-    branches: [ "main" ]  # main 브랜치에 push할 때마다 자동 실행
+    branches: [ "main" ]
   schedule:
-    - cron: '*/10 * * * *'
+    # 15분 주기로 변경 (GitHub 스케줄러 안정권)
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 permissions:
