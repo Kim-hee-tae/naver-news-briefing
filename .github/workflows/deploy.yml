@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
   schedule:
     # 15분 주기로 변경 (GitHub 스케줄러 안정권)
-    - cron: '*/15 * * * *'
+    - cron: '0 * * * *'
   workflow_dispatch:
 
 permissions:
